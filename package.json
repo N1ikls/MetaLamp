@@ -1,0 +1,23 @@
+{
+  "name": "metalamp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "js.js",
+  "scripts": {
+    "watch": "parcel index.html --open --port 8000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/N1ikls/MetaLamp.git"
+  },
+  "keywords": [
+    "metalamp",
+    "figma"
+  ],
+  "author": "Nik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/N1ikls/MetaLamp/issues"
+  },
+  "homepage": "https://github.com/N1ikls/MetaLamp#readme"
+}
