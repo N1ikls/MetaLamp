@@ -37,11 +37,15 @@ ul[class],
 ol[class] {
   list-style: none;
 }
-
+/*----------------------------------------------------------*/
 ._container {
   width: 100%;
   margin: 0 auto;
-  max-width: 1440px;
+  max-width: 1440px;  
+}
+.content {
+  min-height: 100%;
+  overflow: hidden;
 }
 .header__items {
   margin: 15px;
@@ -56,16 +60,39 @@ ol[class] {
   background: #FFFFFF;
   box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
 }
+/*----------------------------------------------------------*/
 body {
   background: #E5E5E5;
 }
+/*----------------------------------------------------------*/
 .logo__text {
   color: #1F2041;
   margin-left: 15px;
   font-weight: 600;
   font-size: 20px;
   font-family: 'Montserrat', sans-serif;
+  display: flex;
  
+}
+/*----------------------------------------------------------*/
+.text_decor {
+  color: #1F2041;
+  font-weight: 600;
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+  text-decoration: none;
+
+}
+.text_decor:before {
+  content: "";
+  width: 80%;
+  height: 0.1em;
+  background: #1F2041;
+  position: absolute;
+  top: 46.3333333333%;
+  left: 2px;
+  transform: rotate(47deg);
 }
 /*---------------------------------*/
 .header__logo {
@@ -100,6 +127,7 @@ a {
   color: rgba(31, 32, 65, 0.75);
   font-weight: 700;
 }
+/*----------------------------------------------------------*/
 .button {
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
@@ -109,7 +137,7 @@ a {
   border-radius: 22px;
   text-transform: uppercase;
   background: none;
-  border: 1px solid #BC9CFF;
+  border: 3.3px solid #BC9CFF;
   align-items: center;
   /* Primary Color */
   color: #BC9CFF;
@@ -122,3 +150,4 @@ a {
 .button:not(:last-child) {
   margin-right: 30px;
 }
+/*----------------------------------------------------------*/
