@@ -4,7 +4,8 @@
   "description": "",
   "main": "js.js",
   "scripts": {
-    "watch": "parcel index.html --open --port 8000"
+    "watch": "parcel index.html --open --port 8000",
+    "header": "parcel header/header.html --open --port 8080"
   },
   "repository": {
     "type": "git",
