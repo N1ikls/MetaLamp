@@ -1,3 +1,4 @@
+/*----------------------------------------------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap');
 *,
 *::before,
@@ -47,6 +48,7 @@ ol[class] {
   width: 100%;
   */
 }
+/*----------------------------------------------------------*/
 .content {
   min-height: 100%;
   overflow: hidden;
