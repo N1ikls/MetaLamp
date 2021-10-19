@@ -52,6 +52,8 @@ ol[class] {
 .content {
   min-height: 100%;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 .header__container {
   justify-content: space-between;
@@ -161,4 +163,13 @@ a {
   color: rgba(31, 32, 65, 0.5);
   border-left: 2px solid rgba(31, 32, 65, 0.1);
   padding-left:30px;
+}
+/*------------------footer----------------------------------*/
+.footer {
+  background: #FFFFFF;
+  box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1);
+}
+/*------------------main----------------------------------*/
+.main {
+  flex: 1 1 auto;
 }
