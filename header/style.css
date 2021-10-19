@@ -32,7 +32,12 @@ body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
 }
-
+div,a {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+}
 /* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
 ul[class],
 ol[class] {
@@ -164,12 +169,90 @@ a {
   border-left: 2px solid rgba(31, 32, 65, 0.1);
   padding-left:30px;
 }
+/*------------------main----------------------------------*/
+.main {
+  flex: 1 1 auto;
+}
 /*------------------footer----------------------------------*/
 .footer {
   background: #FFFFFF;
   box-shadow: 0px 1px 0px rgba(31, 32, 65, 0.1);
 }
-/*------------------main----------------------------------*/
-.main {
-  flex: 1 1 auto;
+.footer__top {
+  
+  padding: 100px 0;
+}
+.footer__main {
+  display: flex;
+}
+._container {
+}
+.footer__column {
+  flex: 0 1 20%;
+}
+._block-logo {
+}
+.social__item {
+}
+.logo__text {
+}
+.text_decor {
+}
+.footer__label {
+  color: rgba(31, 32, 65, 0.75);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.footer__menu {
+}
+.menu-footer {
+}
+.menu-footer__list {
+}
+.menu-footer__item {
+  margin-top: 21px ;
+}
+.menu-footer__link {
+  /* Dark 50% */
+  color: rgba(31, 32, 65, 0.5);
+}
+input[type="text"]{
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 10px;
+  width: 100%;
+}
+input::placeholder {
+  font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 24px;
+/* identical to box height, or 171% */
+/* Dark 25% */
+color: rgba(31, 32, 65, 0.25);
+}
+.menu-footer__input { 
+}
+.footer__text {
+  color: rgba(31, 32, 65, 0.75);
+  margin-top: 30px;
+  
+}
+.footer__bottom {
+}
+.footer__container {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  min-height: 70px;
+}
+.footer__copy {
+  color: rgba(31, 32, 65, 0.75);
+}
+.footer__social {
+}
+.social {
 }
