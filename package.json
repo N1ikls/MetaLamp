@@ -5,7 +5,8 @@
   "main": "js.js",
   "scripts": {
     "watch": "parcel index.html --open --port 8000",
-    "header": "parcel header/header.html --open --port 8080"
+    "header": "parcel header/header.html --open --port 8080",
+    "test": "parcel header/test.html --open --port 8090"
   },
   "repository": {
     "type": "git",
