@@ -83,11 +83,12 @@ body {
   min-height: 70px;
 }
 .header {
-  position:absolute;
+  /*position:absolute;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1000;
+  */
   width: 100%;
   background: #FFFFFF;
   box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
@@ -119,12 +120,12 @@ body {
 .text_decor:before {
   content: "";
   width: 80%;
-  height: 0.1em;
+  height: 1.2px;
   background: #1F2041;
   position: absolute;
   top: 46.1%;
   left: 2px;
-  transform: rotate(47deg);
+  transform: rotate(40deg);
 }
 /*---------------------------------*/
 .header__logo {
@@ -202,12 +203,13 @@ a {
 }
 /*------------------main----------------------------------*/
 .main-block__body {
-  padding: 184px 0 191px 0;
-  position: relative;
-  z-index: 2;
+  
 }
 .main {
   flex: 1 1 auto;
+}
+.main-block__row {
+  margin: 0 15px ;
 }
 /*------------------footer----------------------------------*/
 .footer {
@@ -233,6 +235,9 @@ a {
   }
   .footer__column:last-child {
     flex: 0 1 100%;
+  }
+  input[type="submit"] {
+    top: -38px;
   }
 }
 ._block-logo {
@@ -284,12 +289,8 @@ a {
   color: rgba(31, 32, 65, 0.5);
 }
 input[type="text"]{
-  background: #FFFFFF;
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  box-sizing: border-box;
-  border-radius: 4px;
-  padding: 10px;
-  width: 100%;
+  
+   
 }
 input::placeholder {
   font-family: Montserrat;
@@ -301,7 +302,9 @@ input::placeholder {
   /* Dark 25% */
   color: rgba(31, 32, 65, 0.25);
 }
-.menu-footer__input { 
+.menu-footer__input {
+ 
+  
 }
 .footer__text {
   color: rgba(31, 32, 65, 0.75);
@@ -318,6 +321,7 @@ input::placeholder {
 }
 .footer__copy {
   color: rgba(31, 32, 65, 0.75);
+  padding: 20px 15px;
 }
 .footer__social {
   padding: 20px 15px;
@@ -335,10 +339,40 @@ input::placeholder {
 .social__item:not(:last-child) {
   margin: 0 20px 0 0 ;
 }
-@media (max-width:398px) {
+@media (max-width:815px) {
   .line {
     border-left: 0px;
   }
 }
+
+.search {
+  
+  min-height: 20px; /* Минимальная высота */
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+ }
+ input[type="text"] {
+  align-items: center;
+  background: #FFFFFF;
+  outline:none;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 10px;
+  width: 100%;
+  font-family: inherit;
+  font-weight: 700;
+ }
+ input[type="submit"] {
+  width: 38px; /* Ширина кнопки */
+  height: 38px; /* Высота кнопки */
+  border: none; /* Убираем рамку */
+  background: url('/search.70d26c39.png') center no-repeat; /* Параметры фона */
+  cursor: pointer ;
+ }
+/*----------------------------------------------------------*/
+
 
 /*# sourceMappingURL=/style.e308ff8e.css.map */
